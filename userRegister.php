@@ -3,9 +3,12 @@
     <head>
         <title>CSS Registration Form</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" type="text/css" href="css/default.css"/>
     </head>
-    <body>    
+    <body>
+     <section id="two" class="wrapper style1 fade-up">
+    <div class="inner">    
         <form action="userValidate.php" method="post" class="register">
             <h1>Registration</h1>
             <fieldset class="row1">
@@ -74,6 +77,8 @@
            
             <div><button class="button">Register &raquo;</button></div>
         </form>
+        </section>
+        </div>
     </body>
 </html>
 

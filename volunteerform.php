@@ -3,10 +3,10 @@
 <head>
     <title>forms for blood donation</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="form.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
 
 </head>
-<body>
+<body >
 <script type="text/javascript">
 
     (function ($) {
@@ -17,8 +17,9 @@
         });
     }(jQuery));
     </script>
-<div class="row">
-    <div class="jumbotron col-md-8 col-md-offset-2">
+    <section id="two" class="wrapper style3 fade-up">
+    <div class="inner">
+    <div class="container">
 <div class="form-group col-md-offset-2 col-md-8">
     <form class="form-horizontal" action="volunter.php" method="post">
     <h3>Volunteer Registration</h3>
@@ -101,7 +102,28 @@
                 </div>
     </form> 
   </div>
+  </div>
+  </section>
+  </div>
   <a href="login.php">login</a>
-  <a href="usersform.php"> admin</a>
+  <a href="usersform.php"> admin
+</a>
+<!-- Footer -->
+            <footer id="footer" class="wrapper style1-alt">
+                <div class="inner">
+                    <ul class="menu">
+                        <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            </footer>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="assets/js/main.js"></script>
 </body>
 </html>

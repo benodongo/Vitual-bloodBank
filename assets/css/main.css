@@ -3883,15 +3883,23 @@
 /* Intro */
 
 	#intro {
-		background-attachment: fixed;
+		
 		background-image: url("images/img02.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 	}
+	#intro2 {
+		background-attachment: fixed;
+		background-image: url("images/intro.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
 
 		#intro p {
-			
+
 			font-size: 1.25em;
 		}
 
