@@ -22,10 +22,10 @@
                     <form accept-charset="UTF-8" role="form">
                     <fieldset>
                         <div class="form-group">
-                            <input class="form-control" placeholder="E-mail" name="email" type="text">
+                            <input class="form-control" placeholder="ID NUMBER" name="idnumber" type="number" required="required">
                         </div>
                         <div class="form-group">
-                            <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                            <input class="form-control" placeholder="Password" name="password" type="password" value="" required="required">
                         </div>
                         <div class="checkbox">
                             <label>

@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
-        <title>virtual Blood Bank </title>
+        <title>Donor Registration Form</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" type="text/css" href="css/default.css"/>
@@ -12,18 +12,19 @@
                 <div class="inner">
                     <nav>
                         <ul>
-                            <li><a href="logout.php"><p>Home</p></a></li>
-                            <li><a href="404"><p>Check Blood Availability</p></a></li>
-                            <li><a href="404"><p>Blood Bank Stocks</p></a></li>
-                            <li><a href="#three"><p>Donor Status</p></a></li>
-                            <li><a href="#three"><p>Reports</p></a></li>
+                            <li><a href="donormgt.php">Donor Mangement</a></li>
+                            <li><a href="404">Check Blood Availability</a></li>
+                            <li><a href="404">Blood Bank Stocks</a></li>
+                            <li><a href="#three">Donor Status</a></li>
+                            <li><a href="#three">Reports</a></li>
                         </ul>
                     </nav>
                 </div>
             </section>
     <!-- <section id="two" class="wrapper style1 fade-up">
-    <div class="inner">  -->  
-        <form action="volunteer.php" method="post" class="register">
+    <div class="inner">  --> 
+
+       <form action="userValidate.php" method="post" class="register">
             <h1>Donor Registration</h1>
             <fieldset class="row1">
                 <legend>Account Details
@@ -31,18 +32,18 @@
                 <p>
                     <label>National ID *
                     </label>
-                    <input type="text" name="nationalId" required="required"/>
+                    <input type="text" name="nationalId" />
                     <label>Phone Number *
                     </label>
-                    <input type="text" maxlength="10" name="phone_number" required="required" />
+                    <input type="text" maxlength="10" name="phone_number" />
                 </p>
                 <p>
                    <label>Email *
                     </label>
-                    <input type="text" name="email" required="required"/>
+                    <input type="text" name="email" />
                     <label>username*
                     </label>
-                    <input type="text" name="username" required="required"/>
+                    <input type="text" name="username" />
                 </p>
             </fieldset>
             <fieldset class="row1">
@@ -51,10 +52,10 @@
                 <p>
                     <label>First Name *
                     </label>
-                    <input type="text"  name="firstName" required="required" />
+                    <input type="text"  name="firstName" />
                       <label>Middle Name *
                     </label>
-                    <input type="text"  name="middleName" required="required"/>
+                    <input type="text"  name="middleName" />
                       
                 </p>
                 <p> 
@@ -63,7 +64,7 @@
                     <input type="text"  name="lastName" />
                     <label>Date of Birth</label>
                                 <div id='birthDate'>
-                                    <input type='text'  name="dob"  required="required"/>
+                                    <input type='text'  name="dob" required />
                                         <span class="input-group-addon">
                                             <span class="glyphicon glyphicon-calendar"></span>
                                         </span>
@@ -73,7 +74,7 @@
                     
                                 <label>Donation Date</label>
                                 <div class='input-group date' id='donationDate'>
-                                    <input type='text' class="form-control" name="dod" required="required"/>
+                                    <input type='text' class="form-control" name="dob" required />
                                         <span class="input-group-addon">
                                             <span class="glyphicon glyphicon-calendar"></span>
                                         </span>
@@ -82,10 +83,10 @@
                 <p> 
                     <label>County
                     </label>
-                    <input type="text"  name="county" required="required"/>
+                    <input type="text"  name="county" />
                     <label>Sub-County
                     </label>
-                    <input type="text" maxlength="10" name="sub_county" required="required" />
+                    <input type="text" maxlength="10" name="sub_county" />
                 </p>
             </fieldset>
             <fieldset class="row3">
@@ -94,7 +95,7 @@
                 <p>
                     <label>Blood Group
                     </label>
-                                <select name="blood_group" required="required">
+                                <select name="blood_group">
                                     <option value="0"></option>
                                     <option value="1">A Positive</option>
                                     <option value="2">A Negative</option>
@@ -112,12 +113,12 @@
                  <p>
                    <label>Blood Bank
                     </label>
-                    <input type="text" maxlength="10" name="bank_name" required="required"/> 
+                    <input type="text" maxlength="10" name="bank_name" /> 
                 </p>
             
-                <!-- <div class="infobox"><h4>Note</h4>
+                <div class="infobox"><h4>Note</h4>
                     <p>the user must adhere to confidetiality of user information</p>
-                </div> -->
+                </div>
             </fieldset>
            
             <div><button class="button">Register &raquo;</button></div>
@@ -125,13 +126,13 @@
         <!--</section>
         </div>-->
         <!-- Footer -->
-            <!-- <footer id="footer" class="wrapper style1-alt">
+            <footer id="footer" class="wrapper style1-alt">
                 <div class="inner">
                     <ul class="menu">
                         <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                     </ul>
                 </div>
-            </footer> -->
+            </footer>
 
         <!-- Scripts -->
             <script src="assets/js/jquery.min.js"></script>

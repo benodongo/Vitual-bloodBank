@@ -7,8 +7,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type = "text/javascript" src = "jquery.js"></script>
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script>
+		$(document).ready(function()
+		{
+		$('#registerproductLink').click(function()
+		{
+		
+		$('.#intro').load('volunteerform.php');
+		});
+		});
+		$(document).ready(function()
+		{
+		$('#registernow').click(function()
+		{
+		
+		$('.wrapper').load('login.php');
+		});
+		});
+		</script>
+		
 	</head>
 	<body>
 
@@ -30,14 +50,18 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
+                <div class="inner">
+                	VIRTUAL BLOOD BANK KE  
+                <a href="#"  id="registernow"class="button scrolly">login</a>
+                </div>
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Virtual Blood Bank</h1>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a>
-								<a href="volunteerform.php" class="button scrolly">Donate Now</a></li>
+								<a href="#"id = "registerproductLink" class="button scrolly">Donate Now</a></li>
+								<li>
 							</ul>
 						</div>
 					</section>

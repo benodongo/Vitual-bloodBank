@@ -1,12 +1,13 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
+	<head>...
 		<title>VirtualBloodBank</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/default.css"/>-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -33,35 +34,40 @@
 					
 						<div class="inner">
 
-							<h1>Virtual Blood Bank</h1>
+							Virtual Blood Bank  <span style="float:right";margin-right="10px"><a href="logout.php" class="button scrolly">logout</a></span>
 						</div>
 					
 
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>Admin Functions</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<a href="adminindex.html"><h2>Admininstrative</h2></a>
+							<p></p>
 							<div class="features">
 								<section>
 									<span class="icon major fa-code"></span>
-									<h3>Donor Management</h3>
-									<p>Donor Registration, Managing donor database, recording their physical and medical statistics.</p>
+									<a href="donormgt.php"><h3>Donor Management</h3>
+									<p>Donor Registration, Managing donor database, recording their physical and medical statistics.</p></a>
 								</section>
 								<section>
+								<a href="bloodbank.php">
 									<span class="icon major fa-lock"></span>
 									<h3>Inventory Management</h3>
 									<p> Inventory management in blood bank for storage and issuance of blood.</p>
+									</a>
 								</section>
 								<section>
 									<span class="icon major fa-cog"></span>
-									<h3>Blood Transfer</h3>
-									<p>Online transfer of blood from one blood bank to another.</p>
+									<a href="transfer.php"><h3>Blood Transfer</h3>
+									<p>Online transfer of blood from one blood bank to another.</p></a>
 								</section>
 								<section>
 									<span class="icon major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>Manage Users</h3>
+									<p><ul>
+										<li><a href="adduser.php">Add User</a></li>
+										<li><a href="#">Delete User</a></li>
+									</ul></a></p>
 								</section>
 								<section>
 									<span class="icon major fa-chain"></span>
